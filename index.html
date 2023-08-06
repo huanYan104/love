@@ -19,6 +19,7 @@
 .zp {
 	text-align: center;
 	margin-top: 200px;
+	width: 1100px;
 }
 .zp img {
 	width: 600px;
@@ -78,7 +79,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="zp">
+	<div class="zp" id="zpdiv">
 		<img src="./zp.jpg"/>
 	</div>
 </div>
@@ -92,7 +93,7 @@ together.setHours(12);
 together.setMinutes(0);
 together.setSeconds(0);
 together.setMilliseconds(0);
-
+$("#zpdiv").css("display", "none");
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
 	msg.id = "errorMsg";
